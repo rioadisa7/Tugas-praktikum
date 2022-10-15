@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form barang</title>
+    <style>
+        body {
+            background-color: rgb(209, 203, 190);
+        }
+    </style>
+</head>
+<fieldset>
+    <header align="center">
+        <nav>
+            <a href="#Home">Home</a> |
+            <a href="#Generate link">Generate link</a> |
+            <a href="#Transaction History">Transaction History</a> |
+            <a href="#Policy">Policy</a> |
+            <a href="#Logout">Logout</a> |
+        </nav>
+    </header>
+</fieldset>
+<br>
+<table align="right" width="800">
+    <form>
+        <tr>
+            <td width="150"><label for="title">Title Here</label></td>
+            <td>: <input type="text" id="title"></td>
+        </tr>
+        <tr>
+            <td width="150"><label for="Description">Description</label></td>
+            <td>: <textarea name="Description" cols="21" rows="4"></textarea></td>
+        </tr>
+        <tr>
+            <td width="150"><label for="Number">Acount Number</label></td>
+            <td>: <input type="text" id="Number"></td>
+        </tr>
+        <tr>
+            <td width="150"><label for="Bank">Bank</label></td>
+            <td>: <input type="text" list="Banklevel" name="Banklevel">
+                <datalist id="Banklevel">
+                    <option value="HSBC"></option>
+                    <option value="BCA"></option>
+                    <option value="BRI"></option>
+                </datalist>
+            </td>
+        </tr>
+        <tr>
+            <td width="150"><label for="Acount Holder">Acount Holder</label></td>
+            <td>: <input type="text" id="Acount Holder"></td>
+        </tr>
+        <tr>
+            <td width="150"><label>Transaction</label></td>
+            <td>: <input type="number" id="Transaction" min="1" max="6"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label>* if the transaction is for 3 person, choose 3 from the drop-downlist</label><br>
+                <input type="checkbox" id="Mobile phone">
+                <label for="Mobile phone" style="color: green;">Send to mobilephone</label><br>
+                <input type="checkbox" id="Email">
+                <label for="Email" style="color: green;">Send to Email</label><br>
+            </td>
+        </tr>
+        <tr>
+            <td width="150"><label for="Mobile phone">Send to Mobile Phone</label></td>
+            <td>: <input type="text" id="Mobile phone"></td>
+        </tr>
+        <tr>
+            <td width="150"><label for="Email">Send to Email</label></td>
+            <td>: <input type="text" id="Email"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="left">
+                <p><input type="submit" value="Generate Nobr Link" style="background-color:rgb(9, 133, 9);"></p>
+            </td>
+        </tr>
+    </form>
+</table>
+<img src="assets/mac.jpg" alt="mac" width="20%">
+<p><input type="file" name="photo"></p>
+</body>
+</html>
