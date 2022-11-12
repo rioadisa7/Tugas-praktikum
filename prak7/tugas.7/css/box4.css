@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+}
+
+.outer-col {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+}
+
+.inner-row-1 {
+    display: flex;
+    flex-direction: row;   
+}
+
+.inner-row-2 {
+    display: flex;
+    flex-direction: row; 
+}
+
+footer {
+    background: skyblue;
+    height: 25vh;
+    flex-direction: column;
+    flex: 5;
+}
+
+header {
+    background: lightgreen;
+    height: 25vh;
+}
+
+nav {
+    background: yellow;
+    height: 25vh;
+    width: 25vh;
+}
+article {
+    background: red;
+    height: 25hv;
+    flex-direction: column;
+    flex: 5;
+}
+
+header,
+footer,
+article,
+nav,
+nav {
+    padding: 1em;
+    margin: 1em;
+}
