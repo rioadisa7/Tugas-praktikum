@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: pink;
+    flex: 1;
+}
+
+.colum {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+}
+
+.baris {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+header, footer{
+    background-color: rgb(180, 180, 57);
+    padding: 30px;
+}
+
+.baris article{
+    background-color: white;
+    flex: 2;
+}
+
+.baris aside{
+    background-color: aqua;
+    flex: 1;
+}
