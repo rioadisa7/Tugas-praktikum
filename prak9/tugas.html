@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas9.4</title>
+</head>
+<body>
+    <h2>Menghitung 2 jumlah bilangan</h2>
+    <form onchange="bilangan()" >
+        <input type="number" id="nomer">
+        <br>
+        +
+        <br>
+        <input type="number" id="nomer2">
+        <br>
+        =
+        <br>
+        <input type="number" id="hasil">
+    </form>
+
+    <script>
+        function bilangan() {
+            let n = parseInt(document.getElementById("nomer").value);
+            let b = parseInt(document.getElementById("nomer2").value);
+            let h = n + b;
+
+            document.getElementById("hasil").value = h;
+        }
+    </script>
+</body>
+</html>
