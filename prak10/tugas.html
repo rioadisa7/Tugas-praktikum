@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas</title>
+    <style>
+        #box {
+            width: 50%;
+            border: 1px solid black;
+            height: 400px;
+            padding: 0px 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form>
+                Nama pelanggan : <input type="text" id="nama">
+                <br>
+                Email : <input type="email" id="email">
+                <br>
+                Jam keberangkatan : <input type="number" id="jam">
+                <br>
+                Tujuan keberangkatan : <input type="text" id="tujuan">
+                <br>
+                Jumlah tiket : <select id="pilih">
+                    <option value="" hidden>--pilih--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <input type="button" value="submit" onclick="data()">
+        </form>
+        <div id="box"></div>
+    </div>
+
+    <script>
+        let chatbox = document.getElementById("box");
+        let nama = document.getElementById("nama");
+        let email = document.getElementById("email");
+        let jam = document.getElementById("jam");
+        let tujuan = document.getElementById("tujuan");
+        let tiket = document.getElementById("pilih");
+        
+
+        function data() {
+            let n = document.createElement("p");
+            chatbox.appendChild(n);
+            n.innerHTML = "Nama : " + nama.value;
+
+            let e = document.createElement("p");
+            chatbox.appendChild(e);
+            e.innerHTML = "Email : " + email.value;
+
+            let j = document.createElement("p");
+            chatbox.appendChild(j);
+            j.innerHTML = "Jam : " + jam.value;
+
+            let t = document.createElement("p");
+            chatbox.appendChild(t);
+            t.innerHTML = "Tujuan : " + tujuan.value;
+
+            let p = document.createElement("p");
+            chatbox.appendChild(p);
+            p.innerHTML = "Jumlah Tiket : " + pilih.value;
+            window.alert("Data tervalidasi");
+        }
+    </script>
+</body>
+</html>
+
